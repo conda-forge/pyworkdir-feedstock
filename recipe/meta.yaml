@@ -1,6 +1,6 @@
 {% set name = "pyworkdir" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "3a0ea7f1b137641da5cfb5a6a4fa9b5ad62df170023fa1fbcea8714289cc53bb" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "ebe639bbe3c771467a68a80cde2ddb7b2e4dfe5e31b0fc6b8e3925c08895fb61" %}
 
 package:
   name: {{ name|lower }}
