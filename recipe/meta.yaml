@@ -12,8 +12,10 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
+  entry_points:
+    - workdir = pyworkdir.main:entrypoint
 
 requirements:
   host:
