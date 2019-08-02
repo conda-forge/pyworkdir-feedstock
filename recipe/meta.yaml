@@ -1,6 +1,6 @@
 {% set name = "pyworkdir" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "ebe639bbe3c771467a68a80cde2ddb7b2e4dfe5e31b0fc6b8e3925c08895fb61" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "1ae1c36485bab37c82fb2f32bba285ba8db1e07cac04a9e2fb64f8cef284755a" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - workdir = pyworkdir.main:entrypoint
