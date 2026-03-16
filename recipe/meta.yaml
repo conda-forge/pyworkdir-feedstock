@@ -12,25 +12,27 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - workdir = pyworkdir.main:entrypoint
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - jinja2
     - pyyaml
     - click >=6.0
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - jinja2
     - pyyaml
     - click >=6.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyworkdir
   commands:
